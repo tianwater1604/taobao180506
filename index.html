@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			html,body{
+				margin:0;
+				padding:0;
+			}
+			#box{
+				list-style:none;
+				position:relative;
+				width:600px;
+				height:600px;
+				box-sizing:border-box;
+				margin:10px auto;
+			}
+			li{
+				position:absolute;
+				width:200px;
+				height:200px;
+				border:1px solid white;
+				background-image:url(img/1.jpg);
+				background-size:600px 600px;
+			}
+			#box li:nth-child(1){
+				left:0px;
+				top:0px;
+				background-position:0px 0px;
+			}
+			#box li:nth-child(2){
+				left:200px;
+				top:0px;
+				background-position:-200px 0px;
+			}
+			#box li:nth-child(3){
+				left:400px;
+				top:0px;
+				background-position:-400px 0px;
+			}
+			
+			#box li:nth-child(4){
+				left:0px;
+				top:200px;
+				background-position:0px -200px;
+			}
+			#box li:nth-child(5){
+				left:200px;
+				top:200px;
+				background-position:-200px -200px;
+			}
+			#box li:nth-child(6){
+				left:400px;
+				top:200px;
+				background-position:-400px -200px;
+			}
+			
+			#box li:nth-child(7){
+				left:0px;
+				top:400px;
+				background-position:0px -400px;
+			}
+			#box li:nth-child(8){
+				left:200px;
+				top:400px;
+				background-position:-200px -400px;
+			}
+			#box li:nth-child(9){
+				left:400px;
+				top:400px;
+				background-position:-400px -400px;
+			}
+			
+		</style>
+	</head>
+	<body>
+		<ul id="box">
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+		</ul>
+	</body>
+</html>
+
